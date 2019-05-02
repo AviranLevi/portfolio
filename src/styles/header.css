@@ -1,0 +1,19 @@
+:root {
+    --main: #1C3144
+}
+
+.header-hi {
+    font-weight: bold;
+    font-size: 175px;
+
+}
+
+.desc-title {
+    font-size: 50px;
+    margin: 5vh
+}
+
+.desc-summary {
+    font-size: 20px;
+    line-height: 5vh;
+}

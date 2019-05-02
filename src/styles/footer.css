@@ -1,0 +1,48 @@
+.footer-layer {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 30px;
+}
+
+.social-media-links {
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+    grid-template-columns: repeat(2, 1fr);
+    width: 20%
+}
+
+.social-media-link {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    height: 8vh;
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.social-media-link > i {
+    color: white;
+}
+
+.social-media-link:hover {
+    background-color: white;
+}
+
+.social-media-link > i:hover {
+    color: none;
+    background: linear-gradient(-45deg, #EE7752, #F42272, var(--main), #23A6D5 );
+	background-size: 200% 200%;
+    
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
