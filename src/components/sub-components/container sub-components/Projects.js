@@ -12,15 +12,9 @@ class Projects extends Component {
                     </div>
 
                     <div className="projects-list">
-                        <div className="project">
-                            <h1>Rick And Morty - Space Invaders</h1>
-                        </div>
-                        <div className="project">
-                            <h1>CRM</h1>
-                        </div>
-                        <div className="project">
-                            <h1>doggies</h1>
-                        </div>
+                        <a className="project" href="https://rick-and-morty-space-game.herokuapp.com/" rel="noopener noreferrer" target="_blank">Rick And Morty - Space Invaders</a>
+                        <a className="project" href="https://customer-relationship-manageme.herokuapp.com/" rel="noopener noreferrer" target="_blank">CRM</a>
+                        <a className="project" href="https://doggies-app.herokuapp.com/" rel="noopener noreferrer" target="_blank">doggies</a>
                     </div>
                 </ScrollAnimation>
             </div>

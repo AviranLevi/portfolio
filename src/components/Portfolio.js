@@ -12,8 +12,15 @@ class Portfolio extends Component {
             <div className="portfolio">
                 <Navbar />
                 <Header />
-                <Container />
-                <Footer />
+                <Container
+                    openFront={this.props.openFront}
+                    openBack={this.props.openBack}
+                    openOther={this.props.openOther}
+                    handleOpenFront={this.props.handleOpenFront}
+                    handleOpenBack={this.props.handleOpenBack}
+                    handleOpenOther={this.props.handleOpenOther}
+                />
+                <Footer email={this.props.email} openPopup={this.props.openPopup} />
             </div>
         );
     }

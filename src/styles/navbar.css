@@ -1,23 +1,18 @@
 :root {
     --main: #1C3144
 }
-.navbar > input {
-    font-family: 'Montserrat', sans-serif;
-    border: none;
-    background: none;
-    font-size: 20px;
-}
 
 .navbar > img {
-    height: 5vh;
+    height: 6vh;
     justify-self: start;
-    margin-left: 5vw;
+    margin-left: 4vw;
     cursor: pointer;
     transition: 0.4s;
 }
 
 .navbar > img:hover{
-    height: 6vh;
+    height: 7vh;
+    margin-left: 3vw;
 }
 
 .navbar > button {
@@ -25,9 +20,9 @@
     color: var(--main);
     border: 1px solid var(--main);
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
-    padding: 1vh 2vh;
+    padding: 1vh 1vw;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -35,6 +30,7 @@
 .navbar > button:hover {
     color: white;
     background-color: var(--main);
+    font-size: 1.2em;
 }
 
 .navbar-menu {
@@ -44,5 +40,6 @@
 
 .navbar-menu:hover {
     color: var(--main);
-    font-size: 25px;
+    font-size: 1.2em;
 }
+
