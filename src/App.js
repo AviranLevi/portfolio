@@ -14,7 +14,7 @@ class App extends Component {
       openFront: false,
       openBack: false,
       openOther: false,
-      hover: false,
+      hover: true,
       email: "aveloofficial@gmail.com"
     }
   }
@@ -37,25 +37,22 @@ class App extends Component {
       openFront: false,
       openBack: false,
       openOther: false,
-      hover: false
+      hover: true
     })
   }
 
   handleOpenFront = () => {
-    this.setState({ openFront: true })
+    this.setState({ openFront: true, hover: false })
   }
 
   handleOpenBack = () => {
-    this.setState({ openBack: true })
+    this.setState({ openBack: true, hover: false })
   }
 
   handleOpenOther = () => {
-    this.setState({ openOther: true })
+    this.setState({ openOther: true, hover: false })
   }
 
-  stopHover = () => {
-
-  }
 
   render() {
     return (
@@ -70,6 +67,7 @@ class App extends Component {
           handleOpenFront={this.handleOpenFront}
           handleOpenBack={this.handleOpenBack}
           handleOpenOther={this.handleOpenOther}
+          hover={this.state.hover}
         />
 
         {this.state.alertPopup ? <AlertPopup alertPopup={this.state.alertPopup} /> : null}

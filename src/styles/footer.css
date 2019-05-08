@@ -12,7 +12,7 @@
 }
 
 .footer-title {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -22,7 +22,7 @@
     align-items: center; 
     grid-template-columns: repeat(3, 1fr);
     align-self: start;
-    width: 27%
+    grid-gap: 4vw;
 }
 
 .social-media-link {
@@ -93,4 +93,10 @@
 
 .alert > p {
     align-self: start
+}
+
+@media screen and (max-width: 768px) {
+    .footer-title {
+        font-size: 30px;
+    }
 }

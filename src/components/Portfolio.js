@@ -19,6 +19,7 @@ class Portfolio extends Component {
                     handleOpenFront={this.props.handleOpenFront}
                     handleOpenBack={this.props.handleOpenBack}
                     handleOpenOther={this.props.handleOpenOther}
+                    hover={this.props.hover}
                 />
                 <Footer email={this.props.email} openPopup={this.props.openPopup} />
             </div>

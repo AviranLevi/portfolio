@@ -5,7 +5,6 @@
 .header-hi {
     font-weight: bold;
     font-size: 175px;
-
 }
 
 .desc-title {
@@ -16,4 +15,20 @@
 .desc-summary {
     font-size: 24px;
     line-height: 5vh;
+}
+
+
+@media (max-width:768px) {
+    .header-hi {
+        font-size: 120px
+    }
+
+    .desc-title {
+        font-size: 30px;
+    }
+
+    .desc-summary{
+        font-size: 20px;
+        width: 100%
+    }
 }

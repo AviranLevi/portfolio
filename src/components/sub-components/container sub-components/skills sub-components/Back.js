@@ -11,10 +11,10 @@ class Back extends Component {
         return (
             <div className="skills-details">
                 <img className="skill-image" src={nodejsLogo} alt="NodeJS" title="NodeJS" />
-                <img className="skill-image socket-logo" src={socketLogo} alt="Socket.io" title="socket.io" />
+                <img className="skill-image socket-logo" src={socketLogo} alt="Socket.io" title="Socket.io" />
                 <img className="skill-image sql-logo" src={sqlLogo} alt="SQL" title="SQL" />
-                <img className="skill-image express-logo" src={expressLogo} alt="express" title="Express" />
-                <img className="skill-image mongodb-logo" src={mongodbLogo} alt="MongoDB" title="MongoDB" />
+                <img className="skill-image express-logo" src={expressLogo} alt="express" title="express" />
+                <img className="skill-image mongodb-logo" src={mongodbLogo} alt="mongoDB" title="mongoDB" />
 
             </div>
         );

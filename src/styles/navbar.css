@@ -2,15 +2,18 @@
     --main: #1C3144
 }
 
-.navbar > img {
-    height: 6vh;
+.navbar > a {
     justify-self: start;
+}
+
+.navbar > a > img {
+    height: 6vh;
     margin-left: 4vw;
     cursor: pointer;
     transition: 0.4s;
 }
 
-.navbar > img:hover{
+.navbar > a > img:hover{
     height: 7vh;
     margin-left: 3vw;
 }
@@ -43,3 +46,45 @@
     font-size: 1.2em;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .navbar > a {
+        align-self: center;
+    }
+
+    .navbar > a > img {
+        height: 5vh;
+        margin-left: 2vw;
+    }
+
+    .navbar-menu:hover {
+        font-size: 1em;
+    }
+    
+    .navbar > a > img:hover{
+        height: 5vh;
+        margin-left: 2vw;
+    }
+
+    .navbar > button:hover {
+        color: white;
+        background-color: var(--main);
+        font-size: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .navbar > a {
+        justify-self: center;
+    }
+    
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar > button {
+        display: none;
+    }
+}

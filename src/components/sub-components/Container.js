@@ -16,6 +16,7 @@ class Container extends Component {
                         handleOpenFront={this.props.handleOpenFront}
                         handleOpenBack={this.props.handleOpenBack}
                         handleOpenOther={this.props.handleOpenOther}
+                        hover={this.props.hover}
                     />
                     <Projects />
                 </ScrollAnimation>

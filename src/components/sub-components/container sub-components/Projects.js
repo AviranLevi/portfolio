@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 class Projects extends Component {
     render() {
         return (
-            <div className="projects container-child">
+            <div className="projects container-child hover-on">
                 <ScrollAnimation className="projects-box" animateIn="fadeIn" initiallyVisible={true}>
                     <div className="projects-title">
                         <i className="fas fa-code fa-4x"></i>

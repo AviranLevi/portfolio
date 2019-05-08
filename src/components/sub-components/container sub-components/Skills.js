@@ -11,7 +11,7 @@ class Skills extends Component {
 
     render() {
         return (
-            <div className="skills container-child">
+            <div className={this.props.hover ? `skills container-child hover-on` : `skills container-child`}>
                 <ScrollAnimation className="skills-box" animateIn="fadeIn" initiallyVisible={true}>
                     <div className="skills-title">
                         <i className="fas fa-tools fa-4x"></i>
@@ -19,17 +19,17 @@ class Skills extends Component {
                     </div>
 
                     <div className="skills-list">
-                        <div onClick={this.openFront} className="skill">
+                        <div onClick={this.openFront} className={this.props.hover ? `skill skill-hover` : `skill`}>
                             <h1>Fron-End</h1>
                             {this.props.openFront ? <Front /> : null}
                         </div>
 
-                        <div onClick={this.openBack} className="skill">
+                        <div onClick={this.openBack} className={this.props.hover ? `skill skill-hover` : `skill`}>
                             <h1>Back-End</h1>
                             {this.props.openBack ? <Back /> : null}
                         </div>
 
-                        <div onClick={this.openOther} className="skill">
+                        <div onClick={this.openOther} className={this.props.hover ? `skill skill-hover` : `skill`}>
                             <h1>Other</h1>
                             {this.props.openOther ? <Other /> : null}
                         </div>
