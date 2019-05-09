@@ -234,13 +234,13 @@
     }
 
     .container-child {
-        width: 50vw;
+        width: 80vw;
         margin-top: 4vh;
         padding-top: 5vh
     }
     
     .container-child:hover {
-        width: 50vw;
+        width: 80vw;
     }
 
     .skills {
