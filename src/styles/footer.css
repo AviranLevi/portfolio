@@ -100,4 +100,9 @@
     .footer-title {
         font-size: 30px;
     }
+
+    .alert {
+        display: none;
+    }
+
 }
