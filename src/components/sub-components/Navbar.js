@@ -7,16 +7,16 @@ class Navbar extends Component {
         let logo = require("../../images/logo.png")
         return (
             <div className="navbar">
-                <Link activeClass="active" to="header" spy={true} smooth="true" duration={500}>
+                <Link activeClass="active" to="header" smooth="true" duration={500}>
                     <img src={logo} alt="logo" />
                 </Link>
                 <div className="navbar-menu">
-                    <Link activeClass="active" className="navbar-projects" to="container" spy={true} smooth={true} duration={500}>
+                    <Link activeClass="active" className="navbar-projects" to="container" smooth={true} duration={500}>
                         projects
                     </Link>
                 </div>
                 <button>
-                    <Link activeClass="active" className="navbar-projects" to="footer" spy={true} smooth={true} duration={500}>
+                    <Link activeClass="active" className="navbar-projects" to="footer" smooth={true} duration={500}>
                         say hello
                     </Link>
                 </button>
