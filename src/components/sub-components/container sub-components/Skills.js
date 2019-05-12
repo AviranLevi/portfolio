@@ -20,7 +20,7 @@ class Skills extends Component {
 
                     <div className="skills-list">
                         <div onClick={this.openFront} className={this.props.hover ? `skill skill-hover` : `skill`}>
-                            <h1>Fron-End</h1>
+                            <h1>Front-End</h1>
                             {this.props.openFront ? <Front /> : null}
                         </div>
 

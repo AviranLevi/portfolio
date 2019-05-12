@@ -10,7 +10,7 @@ class Header extends Component {
                     <h1 className="header-hi">Hi!</h1>
                     <div className="desc-box">
                         <h1 className="desc-title">I'm Aviran. Nice to meet you!</h1>
-                        <p className="desc-summary">I'm Fullstack Web Developer & Designer focused on
+                        <p className="desc-summary">I'm Fullstack Web Developer focused on
                             UI / UX & Web Solutions, <br /> Specializing in React and Node.js.</p>
                     </div>
                 </ScrollAnimation>

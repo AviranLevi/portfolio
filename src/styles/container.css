@@ -225,8 +225,10 @@
 .github-logo {
     height: 6.6vh;;
 }
+
+
  
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1250px) {
     .container-child {
         width: 37vw;
     }
