@@ -226,7 +226,18 @@
     height: 6.6vh;;
 }
  
-@media screen and (max-width: 768px) and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
+    .container-child {
+        width: 37vw;
+    }
+    
+    .container-child:hover {
+        width: 37vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
     .container-layer {
         grid-template-columns: 1fr;
         grid-gap: 0;
@@ -234,13 +245,13 @@
     }
 
     .container-child {
-        width: 80vw;
+        width: 60vw;
         margin-top: 4vh;
         padding-top: 5vh
     }
     
     .container-child:hover {
-        width: 80vw;
+        width: 60vw;
     }
 
     .skills {
@@ -293,5 +304,17 @@
 
     .project:hover {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .container-child {
+        width: 80vw;
+        margin-top: 4vh;
+        padding-top: 5vh
+    }
+    
+    .container-child:hover {
+        width: 80vw;
     }
 }
