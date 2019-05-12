@@ -11,12 +11,12 @@ class Navbar extends Component {
                     <img src={logo} alt="logo" />
                 </Link>
                 <div className="navbar-menu">
-                    <Link activeClass="active" className="navbar-projects" to="container" smooth={true} duration={500}>
+                    <Link activeClass="active" className="navbar-projects" to="container-layer" smooth={true} duration={500}>
                         projects
                     </Link>
                 </div>
                 <button>
-                    <Link activeClass="active" className="navbar-projects" to="footer" smooth={true} duration={500}>
+                    <Link activeClass="active" className="navbar-projects" to="footer-layer" smooth={true} duration={500}>
                         say hello
                     </Link>
                 </button>
