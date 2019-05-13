@@ -4,13 +4,13 @@ import "animate.css/animate.min.css";
 
 import Portfolio from './components/Portfolio'
 import AlertPopup from './components/sub-components/footer sub-components/AlertPopup';
+import { ToastContainer } from 'react-toastify';
 
 class App extends Component {
 
   constructor() {
     super()
     this.state = {
-      alertPopup: false,
       openFront: false,
       openBack: false,
       openOther: false,
@@ -25,10 +25,6 @@ class App extends Component {
 
   componentWillUnmount() {
     document.body.removeEventListener('click', this.handleBodyClick);
-  }
-
-  handleClick = () => {
-    this.setState({ alertPopup: true })
   }
 
   handleBodyClick = () => {
@@ -60,7 +56,6 @@ class App extends Component {
 
         <Portfolio
           email={this.state.email}
-          openPopup={this.handleClick}
           openFront={this.state.openFront}
           openBack={this.state.openBack}
           openOther={this.state.openOther}

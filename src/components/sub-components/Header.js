@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" initiallyVisible={true}>
+                <ScrollAnimation animateIn="fadeInLeft" initiallyVisible={true} animateOnce={true}>
                     <h1 className="header-hi">Hi!</h1>
                     <div className="desc-box">
                         <h1 className="desc-title">I'm Aviran. Nice to meet you!</h1>

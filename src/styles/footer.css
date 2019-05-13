@@ -64,18 +64,9 @@
     justify-items: center;
     align-items: center;
     grid-gap: 2vh;
-    height: 15vh;
-    width: fit-content;
-    padding: 0 4vw;
-    position: fixed;
-    top: 4%;
-    left: 41%;
-    border-radius: 25px;
+    height: 100%;
+    width: 100%;
     color: var(--main);
-    background: white;
-    transition: 0.5s;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
 }
 
 .alert-title {
@@ -96,12 +87,20 @@
     align-self: start
 }
 
+.Toastify__toast-body {
+    height: 10vh;
+}
+
+.Toastify__toast--default {
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 768px) {
     .footer-title {
         font-size: 30px;
     }
 
-    .alert {
+    .Toastify {
         display: none;
     }
 

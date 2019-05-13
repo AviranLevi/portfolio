@@ -8,7 +8,7 @@ class Container extends Component {
     render() {
         return (
             <div className="container">
-                <ScrollAnimation className="container-layer" animateIn="fadeInRight" animateOut="fadeOutLeft" initiallyVisible={true}>
+                <ScrollAnimation className="container-layer" animateIn="fadeInRight" initiallyVisible={true} animateOnce={true}>
                     <Skills
                         openFront={this.props.openFront}
                         openBack={this.props.openBack}
