@@ -46,12 +46,20 @@
     align-items: center;
     margin-top: 4vh;
     grid-gap: 4vh;
-    background: linear-gradient(to right, #23A6D5 0%, var(--main) 100%);
+}
+
+.projects-title > i {
+    background: linear-gradient(to right, #23A6D5 0%, #1C3144 100%);
+    background: -webkit-linear-gradient(to right, #23A6D5 0%, #1C3144 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .projects-title > h1 {
+    background: linear-gradient(to right, #23A6D5 0%, #1C3144 100%);
+    background: -webkit-linear-gradient(to right, #23A6D5 0%, #1C3144 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 50px;
     font-weight: bold;
     text-transform: lowercase;
@@ -112,12 +120,19 @@
     align-items: center;
     margin-top: 4vh;
     grid-gap: 4vh;
+}
+
+.skills-title > i {
+    background: linear-gradient(to right, #EE7752 0%, #F42272 100%);
+    background: -webkit-linear-gradient(to right, #EE7752 0%, #F42272 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.skills-title > h1 {
     background: linear-gradient(to right, #EE7752 0%, #F42272 100%);
     background: -webkit-linear-gradient(to right, #EE7752 0%, #F42272 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.skills-title > h1 {
     font-size: 50px;
     font-weight: bold;
     text-transform: lowercase;
