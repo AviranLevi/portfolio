@@ -7,14 +7,14 @@
 }
 
 .navbar > a > img {
-    height: 6vh;
+    height: 5vh;
     margin-left: 4vw;
     cursor: pointer;
     transition: 0.4s;
 }
 
 .navbar > a > img:hover{
-    height: 7vh;
+    height: 6vh;
     margin-left: 3vw;
 }
 
