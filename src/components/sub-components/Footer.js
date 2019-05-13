@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { ToastsContainer, ToastsStore, ToastsContainerPosition } from 'react-toasts';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import '../../styles/footer.css';

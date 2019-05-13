@@ -4,7 +4,6 @@ import "animate.css/animate.min.css";
 
 import Portfolio from './components/Portfolio'
 import AlertPopup from './components/sub-components/footer sub-components/AlertPopup';
-import { ToastContainer } from 'react-toastify';
 
 class App extends Component {
 
