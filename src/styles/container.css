@@ -113,10 +113,10 @@
     margin-top: 4vh;
     grid-gap: 4vh;
     background: linear-gradient(to right, #EE7752 0%, #F42272 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(to right, #EE7752 0%, #F42272 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .skills-title > h1 {
     font-size: 50px;
     font-weight: bold;
