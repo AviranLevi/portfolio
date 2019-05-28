@@ -19,15 +19,17 @@ class Footer extends Component {
                     <h1 className="footer-title">find me on social media</h1>
                     <div className="social-media-links">
                         <a className="linked-in social-media-link" rel="noopener noreferrer" href="https://www.linkedin.com/in/aviran-levi-29660911b/" target="_blank">
-                            <i class="fab fa-linkedin-in fa-2x"></i>
+                            <i className="fab fa-linkedin-in fa-2x"></i>
                         </a>
 
                         <CopyToClipboard text={this.props.email}>
-                            <a className="email social-media-link" rel="noopener noreferrer" href={`mailto:${this.props.email}`} onClick={this.openPopup}><i class="far fa-envelope fa-2x"></i></a>
+                            <a className="email social-media-link" rel="noopener noreferrer" href={`mailto:${this.props.email}`} onClick={this.openPopup}>
+                                <i className="far fa-envelope fa-2x"></i>
+                            </a>
                         </CopyToClipboard>
 
                         <a className="github social-media-link" rel="noopener noreferrer" href="https://github.com/AviranLevi" target="_blank">
-                            <i class="fab fa-github fa-2x"></i>
+                            <i className="fab fa-github fa-2x"></i>
                         </a>
 
                         <ToastContainer />
