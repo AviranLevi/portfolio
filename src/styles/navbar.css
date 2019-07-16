@@ -1,90 +1,86 @@
 :root {
-    --main: #1C3144
+  --main: #1c3144;
 }
 
 .navbar > a {
-    justify-self: start;
+  justify-self: start;
+  color: var(--main);
 }
 
 .navbar > a > img {
-    height: 5vh;
-    margin-left: 4vw;
-    cursor: pointer;
-    transition: 0.4s;
+  height: 5vh;
+  margin-left: 4vw;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
-.navbar > a > img:hover{
-    height: 6vh;
-    margin-left: 3vw;
+.navbar > a > img:hover {
+  height: 6vh;
+  margin-left: 3vw;
 }
 
 .navbar > button {
-    background: none;
-    color: var(--main);
-    border: 1px solid var(--main);
-    border-radius: 25px;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 1vh 1vw;
-    cursor: pointer;
-    transition: 0.4s;
+  background: none;
+  color: var(--main);
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1vh 1vw;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .navbar > button:hover {
-    color: white;
-    background-color: var(--main);
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .navbar-menu {
-    cursor: pointer;
-    transition: 0.4s;
+  cursor: pointer;
+  transition: 0.4s;
+  color: var(--main);
 }
 
 .navbar-menu:hover {
-    color: var(--main);
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
-
-
 @media screen and (max-width: 768px) {
-    .navbar > a {
-        align-self: center;
-    }
+  .navbar > a {
+    align-self: center;
+  }
 
-    .navbar > a > img {
-        height: 5vh;
-        margin-left: 2vw;
-    }
+  .navbar > a > img {
+    height: 5vh;
+    margin-left: 2vw;
+  }
 
-    .navbar-menu:hover {
-        font-size: 1em;
-    }
-    
-    .navbar > a > img:hover{
-        height: 5vh;
-        margin-left: 2vw;
-    }
+  .navbar-menu:hover {
+    font-size: 1em;
+  }
 
-    .navbar > button:hover {
-        color: white;
-        background-color: var(--main);
-        font-size: 1em;
-    }
-    
+  .navbar > a > img:hover {
+    height: 5vh;
+    margin-left: 2vw;
+  }
+
+  .navbar > button:hover {
+    color: white;
+    background-color: var(--main);
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .navbar > a {
-        justify-self: center;
-    }
-    
-    .navbar-menu {
-        display: none;
-    }
+  .navbar > a {
+    justify-self: center;
+  }
 
-    .navbar > button {
-        display: none;
-    }
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar > button {
+    display: none;
+  }
 }

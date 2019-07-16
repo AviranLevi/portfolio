@@ -1,25 +1,42 @@
-import React, { Component } from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React, { Component } from "react";
+import ScrollAnimation from "react-animate-on-scroll";
 
 class Projects extends Component {
-    render() {
-        return (
-            <div className="projects container-child hover-on">
-                <ScrollAnimation className="projects-box" animateIn="fadeIn" initiallyVisible={true}>
-                    <div className="projects-title">
-                        <i className="fas fa-code fa-4x"></i>
-                        <h1>Projects</h1>
-                    </div>
+  handleOpenProjectPopup = e => {
+    this.props.handleOpenProjectPopup(e);
+  };
 
-                    <div className="projects-list">
-                        <a className="project" href="https://rick-and-morty-space-game.herokuapp.com/" rel="noopener noreferrer" target="_blank">Rick And Morty - Space Invaders</a>
-                        <a className="project" href="https://customer-relationship-manageme.herokuapp.com/" rel="noopener noreferrer" target="_blank">CRM</a>
-                        <a className="project" href="https://doggies-app.herokuapp.com/" rel="noopener noreferrer" target="_blank">doggies</a>
-                    </div>
-                </ScrollAnimation>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="projects container-child hover-on">
+        <ScrollAnimation
+          className="projects-box"
+          animateIn="fadeIn"
+          initiallyVisible={true}
+        >
+          <div className="projects-title">
+            <i className="fas fa-code fa-4x" />
+            <h1>Projects</h1>
+          </div>
+
+          <div className="projects-list">
+            {this.props.projects.map(project => (
+              <div
+                className="project"
+                key={project.name}
+                name={project.name}
+                rel="noopener noreferrer"
+                target="_blank"
+                onClick={this.handleOpenProjectPopup}
+              >
+                {project.name}
+              </div>
+            ))}
+          </div>
+        </ScrollAnimation>
+      </div>
+    );
+  }
 }
 
 export default Projects;

@@ -1,24 +1,43 @@
-import React, { Component } from 'react';
-
-let nodejsLogo = require("../../../../images/back/nodejs.png")
-let expressLogo = require("../../../../images/back/express.png")
-let mongodbLogo = require("../../../../images/back/mongodb.png")
-let sqlLogo = require("../../../../images/back/sql.png")
-let socketLogo = require("../../../../images/back/socket.png")
+import React, { Component } from "react";
+import skillsObj from "../../../../consts/SkillsObj";
 
 class Back extends Component {
-    render() {
-        return (
-            <div className="skills-details">
-                <img className="skill-image" src={nodejsLogo} alt="NodeJS" title="NodeJS" />
-                <img className="skill-image socket-logo" src={socketLogo} alt="Socket.io" title="Socket.io" />
-                <img className="skill-image sql-logo" src={sqlLogo} alt="SQL" title="SQL" />
-                <img className="skill-image express-logo" src={expressLogo} alt="express" title="express" />
-                <img className="skill-image mongodb-logo" src={mongodbLogo} alt="mongoDB" title="mongoDB" />
-
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="skills-details">
+        <img
+          className="skill-image"
+          src={skillsObj.nodejsLogo}
+          alt="NodeJS"
+          title="NodeJS"
+        />
+        <img
+          className="skill-image socket-logo"
+          src={skillsObj.socketLogo}
+          alt="Socket.io"
+          title="Socket.io"
+        />
+        <img
+          className="skill-image sql-logo"
+          src={skillsObj.sqlLogo}
+          alt="SQL"
+          title="SQL"
+        />
+        <img
+          className="skill-image express-logo"
+          src={skillsObj.expressLogo}
+          alt="express"
+          title="express"
+        />
+        <img
+          className="skill-image mongodb-logo"
+          src={skillsObj.mongodbLogo}
+          alt="mongoDB"
+          title="mongoDB"
+        />
+      </div>
+    );
+  }
 }
 
 export default Back;
