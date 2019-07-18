@@ -322,6 +322,11 @@
   border-radius: 50%;
 }
 
+.ts-logo {
+  height: 6.5vh;
+  border-radius: 50%;
+}
+
 /* BACK */
 .mongodb-logo {
   height: 3vh;

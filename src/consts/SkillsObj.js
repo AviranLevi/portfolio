@@ -18,6 +18,7 @@ let herokuLogo = require("../images/other/heroku.png");
 let githubLogo = require("../images/other/github.png");
 let angularLogo = require("../images/front/angular.png");
 let rxjsLogo = require("../images/front/rxjs.png");
+let tsLogo = require("../images/front/ts.png");
 
 let skillsObj = {
   htmlLogo: htmlLogo,
@@ -39,7 +40,8 @@ let skillsObj = {
   herokuLogo: herokuLogo,
   githubLogo: githubLogo,
   angularLogo: angularLogo,
-  rxjsLogo: rxjsLogo
+  rxjsLogo: rxjsLogo,
+  tsLogo: tsLogo
 };
 
 export default skillsObj;

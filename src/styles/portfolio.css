@@ -1,125 +1,118 @@
 @font-face {
-	font-family: 'Galano Grotesque';
-	src: url("../font/GalanoGrotesqueDEMO-Bold.ttf");
-	font-weight: normal;
-	font-style: normal
+  font-family: "Galano Grotesque";
+  src: url("../font/GalanoGrotesqueDEMO-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-    --main: #1C3144
+  --main: #1c3144;
 }
 
 * {
-	outline: none;
-	text-decoration: none;
+  outline: none;
+  text-decoration: none;
 }
 
 .navbar {
-    font-family: 'Galano Grotesque', sans-serif;
-    height: 12vh;
-    display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    font-size: 24px;
-    font-weight: bold;
+  font-family: "Galano Grotesque", sans-serif;
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .header {
-    font-family: 'Galano Grotesque', sans-serif;
-    height: 100vh;
-    display: grid;
-    justify-items: center;
-    align-content: center;
-    grid-gap: 1vh;
-    text-align: center;
-    font-weight: bold;
-	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #F42272, var(--main), #23A6D5 );
-	background-size: 400% 400%;
-	-webkit-animation: bg-colors 10s ease infinite;
-	-moz-animation: bg-colors 10s ease infinite;
-	animation: bg-colors 10s ease infinite;
+  font-family: "Galano Grotesque", sans-serif;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-gap: 1vh;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #f42272, var(--main), #23a6d5);
+  background-size: 400% 400%;
+  -webkit-animation: bg-colors 10s ease infinite;
+  -moz-animation: bg-colors 10s ease infinite;
+  animation: bg-colors 10s ease infinite;
 }
 
 .container {
-    color: var(--main);
-    font-family: 'Galano Grotesque', sans-serif;
-	height: 100vh;
-	
+  color: var(--main);
+  font-family: "Galano Grotesque", sans-serif;
+  height: fit-content;
+  padding: 12vh 0;
 }
 
 .footer {
-    font-family: 'Galano Grotesque', sans-serif;
-    color: white;
-    height: 40vh;
-    background: linear-gradient(-45deg, #EE7752, #F42272, var(--main), #23A6D5 );
-	background-size: 400% 400%;
-	-webkit-animation: bg-colors 10s ease infinite;
-	-moz-animation: bg-colors 10s ease infinite;
-	animation: bg-colors 10s ease infinite;
+  font-family: "Galano Grotesque", sans-serif;
+  color: white;
+  height: 40vh;
+  background: linear-gradient(-45deg, #ee7752, #f42272, var(--main), #23a6d5);
+  background-size: 400% 400%;
+  -webkit-animation: bg-colors 10s ease infinite;
+  -moz-animation: bg-colors 10s ease infinite;
+  animation: bg-colors 10s ease infinite;
 }
 
 @-moz-keyframes bg-colors {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes bg-colors {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-	body {
-		width: 100%;
-	}
-    .navbar {
-		font-size: 20px;
-		margin-right: 2vw;
-	}
-	
-	.header {
-		height: 100vh;
-		width: 100%;
-	}
+  body {
+    width: 100%;
+  }
+  .navbar {
+    font-size: 20px;
+    margin-right: 2vw;
+  }
 
-	.container {
-		height: fit-content;
-		padding-bottom: 4vh;
-	}
+  .header {
+    height: 100vh;
+    width: 100%;
+  }
 
-	.footer {
-		height: 50vh;
-	}
+  .footer {
+    height: 50vh;
+  }
 }
 
 @media screen and (max-width: 700px) {
-	body {
-		width: 100%
-	}
+  body {
+    width: 100%;
+  }
 
-	.navbar {
-		grid-template-columns: 100%;
-	}
+  .navbar {
+    grid-template-columns: 100%;
+  }
 
-	.footer {
-		width: 100%;
-	}
-
+  .footer {
+    width: 100%;
+  }
 }

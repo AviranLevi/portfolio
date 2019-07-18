@@ -24,6 +24,13 @@ class Front extends Component {
           title="Javascript"
         />
         <img
+          className="skill-image ts-logo"
+          src={skillsObj.tsLogo}
+          alt="TypeScript"
+          title="TypeScript"
+        />
+
+        <img
           className="skill-image"
           src={skillsObj.reactLogo}
           alt="React"
