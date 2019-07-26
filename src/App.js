@@ -41,7 +41,7 @@ class App extends Component {
         {
           name: "imageSearch",
           desc:
-            "Simple Images search website using Pixabay API with sign up page.",
+            "Simple images search website using Pixabay API with sign up page.",
           usedTech: [
             skillsObj.htmlLogo,
             skillsObj.cssLogo,
@@ -51,7 +51,7 @@ class App extends Component {
             skillsObj.nodejsLogo,
             skillsObj.expressLogo
           ],
-          projectLink: "https://image--search.herokuapp.com/home"
+          projectLink: "https://image--search.herokuapp.com/"
         },
 
         {
