@@ -39,6 +39,22 @@ class App extends Component {
         },
 
         {
+          name: "imageSearch",
+          desc:
+            "Simple Images search website using Pixabay API with sign up page.",
+          usedTech: [
+            skillsObj.htmlLogo,
+            skillsObj.cssLogo,
+            skillsObj.jsLogo,
+            skillsObj.angularLogo,
+            skillsObj.rxjsLogo,
+            skillsObj.nodejsLogo,
+            skillsObj.expressLogo
+          ],
+          projectLink: "https://image--search.herokuapp.com/home"
+        },
+
+        {
           name: "CRM",
           desc:
             "Client Management System with a database based table and a graphic analytics dashboard in a single page application",
@@ -52,21 +68,6 @@ class App extends Component {
             skillsObj.mongodbLogo
           ],
           projectLink: "https://customer-relationship-manageme.herokuapp.com/"
-        },
-
-        {
-          name: "doggies",
-          desc: "Dogs parks based on social network.",
-          usedTech: [
-            skillsObj.htmlLogo,
-            skillsObj.cssLogo,
-            skillsObj.jsLogo,
-            skillsObj.jqueryLogo,
-            skillsObj.nodejsLogo,
-            skillsObj.expressLogo,
-            skillsObj.mongodbLogo
-          ],
-          projectLink: "https://doggies-app.herokuapp.com/"
         }
       ]
     };
