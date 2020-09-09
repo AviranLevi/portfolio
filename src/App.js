@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import "./App.css";
-import "animate.css/animate.min.css";
+import React, { Component } from 'react';
+import './App.css';
+import 'animate.css/animate.min.css';
 
-import Portfolio from "./components/Portfolio";
-import AlertPopup from "./components/sub-components/footer sub-components/AlertPopup";
-import skillsObj from "./consts/SkillsObj";
-import ProjectPopup from "./components/sub-components/container sub-components/skills sub-components/projects sub-components/ProjectPopup";
-import { CSSTransition } from "react-transition-group";
+import Portfolio from './components/Portfolio';
+import AlertPopup from './components/sub-components/footer sub-components/AlertPopup';
+import { skillsObj } from './consts/SkillsObj';
+import ProjectPopup from './components/sub-components/container sub-components/skills sub-components/projects sub-components/ProjectPopup';
+import { CSSTransition } from 'react-transition-group';
 
 class App extends Component {
   constructor() {
@@ -17,14 +17,29 @@ class App extends Component {
       openOther: false,
       openProjectPopup: false,
       hover: true,
-      email: "aveloofficial@gmail.com",
+      email: 'aveloofficial@gmail.com',
       onSelectedProject: {},
 
       projects: [
         {
-          name: "Rick & Morty - Space Invaders",
-          desc:
-            "Real time multiplayer / single player online game, based on the TV cartoon Rick and Morty.",
+          name: 'JoinUS',
+          desc: 'Create a land-page for your new music release! All your media links in one and beautiful page!',
+          usedTech: [
+            skillsObj.htmlLogo,
+            skillsObj.cssLogo,
+            skillsObj.jsLogo,
+            skillsObj.reactLogo,
+            skillsObj.reduxLogo,
+            skillsObj.jwtLogo,
+            skillsObj.nodejsLogo,
+            skillsObj.expressLogo,
+            skillsObj.mongodbLogo,
+          ],
+          projectLink: 'https://join-us-client.herokuapp.com/',
+        },
+        {
+          name: 'Rick & Morty - Space Invaders',
+          desc: 'Real time multiplayer / single player online game, based on the TV cartoon Rick and Morty.',
           usedTech: [
             skillsObj.htmlLogo,
             skillsObj.cssLogo,
@@ -33,15 +48,14 @@ class App extends Component {
             skillsObj.mobxLogo,
             skillsObj.nodejsLogo,
             skillsObj.expressLogo,
-            skillsObj.socketLogo
+            skillsObj.socketLogo,
           ],
-          projectLink: "https://rick-and-morty-space-game.herokuapp.com/"
+          projectLink: 'https://rick-and-morty-space-game.herokuapp.com/',
         },
 
         {
-          name: "imageSearch",
-          desc:
-            "Simple images search website using Pixabay API with sign up page.",
+          name: 'imageSearch',
+          desc: 'Simple images search website using Pixabay API with sign up page.',
           usedTech: [
             skillsObj.htmlLogo,
             skillsObj.cssLogo,
@@ -49,36 +63,20 @@ class App extends Component {
             skillsObj.angularLogo,
             skillsObj.rxjsLogo,
             skillsObj.nodejsLogo,
-            skillsObj.expressLogo
-          ],
-          projectLink: "https://image--search.herokuapp.com/"
-        },
-
-        {
-          name: "CRM",
-          desc:
-            "Client Management System with a database based table and a graphic analytics dashboard in a single page application",
-          usedTech: [
-            skillsObj.htmlLogo,
-            skillsObj.cssLogo,
-            skillsObj.jsLogo,
-            skillsObj.reactLogo,
-            skillsObj.nodejsLogo,
             skillsObj.expressLogo,
-            skillsObj.mongodbLogo
           ],
-          projectLink: "https://customer-relationship-manageme.herokuapp.com/"
-        }
-      ]
+          projectLink: 'https://image--search.herokuapp.com/',
+        },
+      ],
     };
   }
 
   componentDidMount() {
-    document.body.addEventListener("click", this.handleBodyClick);
+    document.body.addEventListener('click', this.handleBodyClick);
   }
 
   componentWillUnmount() {
-    document.body.removeEventListener("click", this.handleBodyClick);
+    document.body.removeEventListener('click', this.handleBodyClick);
   }
 
   handleBodyClick = () => {
@@ -88,7 +86,7 @@ class App extends Component {
       openBack: false,
       openOther: false,
       openProjectPopup: false,
-      hover: true
+      hover: true,
     });
   };
 
@@ -98,11 +96,9 @@ class App extends Component {
 
   handleOpenOther = () => this.setState({ openOther: true, hover: false });
 
-  handleOpenProjectPopup = e => {
-    let selectedProject = e.target.getAttribute("name");
-    let findProject = this.state.projects.find(
-      project => project.name === selectedProject
-    );
+  handleOpenProjectPopup = (e) => {
+    let selectedProject = e.target.getAttribute('name');
+    let findProject = this.state.projects.find((project) => project.name === selectedProject);
 
     this.setState({ openProjectPopup: true, onSelectedProject: findProject });
   };
@@ -111,7 +107,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className='App'>
         <Portfolio
           projects={this.state.projects}
           email={this.state.email}
@@ -125,14 +121,12 @@ class App extends Component {
           hover={this.state.hover}
         />
 
-        {this.state.alertPopup ? (
-          <AlertPopup alertPopup={this.state.alertPopup} />
-        ) : null}
+        {this.state.alertPopup ? <AlertPopup alertPopup={this.state.alertPopup} /> : null}
 
         <CSSTransition
           in={this.state.openProjectPopup}
           timeout={{ enter: 300, exit: 0 }}
-          classNames="fade"
+          classNames='fade'
           unmountOnExit
         >
           <ProjectPopup project={this.state.onSelectedProject} />

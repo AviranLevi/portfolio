@@ -295,6 +295,7 @@
 
 .skill-image {
   max-height: 8vh;
+  max-width: 100%;
 }
 
 .fade-enter {
