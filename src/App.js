@@ -68,7 +68,7 @@ class App extends Component {
             skillsObj.expressLogo,
           ],
           projectLink: 'https://image--search.herokuapp.com/',
-          github: 'https://github.com/AviranLevi/rick-morty-game',
+          github: 'https://github.com/AviranLevi/imageSearch',
         },
       ],
     };
