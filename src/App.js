@@ -36,6 +36,7 @@ class App extends Component {
             skillsObj.mongodbLogo,
           ],
           projectLink: 'https://join-us-client.herokuapp.com/',
+          github: 'https://github.com/AviranLevi/join-us',
         },
         {
           name: 'Rick & Morty - Space Invaders',
@@ -51,6 +52,7 @@ class App extends Component {
             skillsObj.socketLogo,
           ],
           projectLink: 'https://rick-and-morty-space-game.herokuapp.com/',
+          github: 'https://github.com/AviranLevi/rick-morty-game',
         },
 
         {
@@ -66,6 +68,7 @@ class App extends Component {
             skillsObj.expressLogo,
           ],
           projectLink: 'https://image--search.herokuapp.com/',
+          github: 'https://github.com/AviranLevi/rick-morty-game',
         },
       ],
     };

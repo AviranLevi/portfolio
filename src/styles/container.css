@@ -92,7 +92,6 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   text-align: center;
-  text-transform: lowercase;
 }
 
 .project > a {
@@ -138,7 +137,6 @@
   background: -webkit-linear-gradient(to right, #ee7752 0%, #f42272 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-transform: lowercase;
   height: 3vh;
 }
 
@@ -146,9 +144,12 @@
   justify-self: center;
 }
 
+.project-popup-title {
+  position: relative;
+}
+
 .project-popup-name {
-  font-size: 25px;
-  text-transform: lowercase;
+  font-size: 30px;
   font-weight: bold;
   background: linear-gradient(to right, #23a6d5 0%, #1c3144 100%);
   background: -webkit-linear-gradient(to right, #23a6d5 0%, #1c3144 100%);
@@ -157,6 +158,15 @@
   align-self: center;
   margin-left: 2vw;
   height: 4vh;
+}
+
+.github-link {
+  position: absolute;
+  margin-left: 2vw;
+}
+
+.github-link > img {
+  height: 30px;
 }
 
 .project-popup-close-btn {
@@ -203,7 +213,6 @@
   outline: none;
   text-decoration: none;
   width: 100%;
-  text-transform: lowercase;
   text-align: center;
 }
 
@@ -271,7 +280,6 @@
   transition: transform 0.3s ease-out;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  text-transform: lowercase;
 }
 
 .skill-hover:hover {
